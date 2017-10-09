@@ -1,0 +1,50 @@
+node_modules
+jspm_packages
+bower_components
+.sass-cache
+
+# Optional REPL history
+.node_repl_history
+
+# mock db file
+db.json
+
+
+# PUBLIC FOLDER
+public
+
+
+views/pages/test.html
+
+staticframe.sublime-project
+staticframe.sublime-workspace
+
+
+# EDITOR EXTENSIONS
+.idea/
+.vscode/
+
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+
+# Optional npm cache directory
+.npm
+
+
+# DS Store
+.DS_Store
+
+# SCSS LINT REPORT
+scssReport.json
+
+
