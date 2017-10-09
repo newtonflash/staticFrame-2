@@ -1,0 +1,61 @@
+{
+    "name": "StaticFrame-2",
+    "description": "Local Developement Server",
+    "version": "0.2.0",
+    "license" : "GNU GENERAL PUBLIC LICENSE",
+    "author": {
+        "name": "NewtonFlash",
+        "url": "http://www.newtonflash.com"
+    },
+    "private": true,
+    "engines": {
+        "node": ">=0.10"
+    },
+    "scripts" :{
+        "start" : "node server.js",
+        "dev" : "webpack --config ./core/webpack.config.js"
+
+    },
+    "devDependencies": {
+        "browser-sync": "^2.18.2",
+        "gulp": "^3.9.1",
+        "gulp-bless": "^3.1.0",
+        "gulp-clean": "^0.3.2",
+        "gulp-concat": "^2.6.0",
+        "gulp-exec": "^2.1.3",
+        "gulp-hb": "^5.1.4",
+        "gulp-imagemin": "^3.1.1",
+        "gulp-jshint": "^2.0.0",
+        "gulp-minify-css": "^1.2.2",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^2.3.2",
+        "gulp-sourcemaps": "^2.4.0",
+        "gulp-scss-lint": "^0.4.0",
+        "gulp-svg-sprites": "^4.0.2",
+        "gulp-uglify": "^1.5.1",
+        "jshint": "^2.8.0",
+        "run-sequence": "^1.2.2",
+
+        "babel-core": "^6.7.2",
+        "babel-loader": "^7.1.0",
+        "babel-preset-es2015": "^6.16.0",
+        "css-loader" : "0.28.7",
+        "sass-loader" : "6.0.6",
+        "extract-text-webpack-plugin" : "3.0.0"
+    },
+    "dependencies": {
+        "gulp": "^3.9.1",
+        "express":"4.15.3",
+        "express-handlebars": "3.0.0",
+        "body-parser": "~1.8.1",
+        "cookie-parser": "~1.3.3",
+        "serve-favicon": "~2.1.3",
+        "method-override": "*",
+        "errorhandler": "^1.1.1",
+        "debug": "~2.0.0",
+        "serve-index" : "1.7.2",
+        "jshint-html-reporter": "*",
+        "nodemon":"1.11.0",
+        "webpack" : "3.6.0"
+    }
+}

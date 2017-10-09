@@ -1,0 +1,31 @@
+{
+  "node": true,
+  "browser": true,
+  "es5": false,
+  "esnext": false,
+  "bitwise": true,
+  "camelcase": false,
+  "curly": true,
+  "eqeqeq": true,
+  "immed": false,
+  "indent": 2,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "regexp": true,
+  "undef": false,
+  "unused": false,
+  "strict": true,
+  "trailing": true,
+  "smarttabs": true,
+  "globals" : {
+    "$": true,
+    "requirejs": true,
+    "utils": true,
+    "component": true,
+    "data": true,
+    "google": true,
+    "eu": true,
+    "Swiper": true
+  }
+}
