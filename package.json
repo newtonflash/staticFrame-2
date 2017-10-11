@@ -12,7 +12,7 @@
         "node": ">=0.10"
     },
     "scripts" :{
-        "start" : "node server.js",
+        "start" : "node ./core/server.js",
         "dev" : "webpack --config ./core/webpack.config.js"
 
     },
