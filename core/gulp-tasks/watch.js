@@ -1,7 +1,7 @@
 
 module.exports = function (gulp, plugins, config) {
 
-    gulp.task('watch', ['watch:sass', 'watch:js']);
+    gulp.task('watch', []);
 
     gulp.task('watch:sass', function () {
         return gulp.watch(config.sass.source, ['sass:compile-dev']);

@@ -4,14 +4,6 @@ var plugins = require('gulp-load-plugins')();
 var siteConfig = require('./site-config.js');
 
 var config = {
-    sass: {
-        source          : path.join(__dirname , siteConfig.sassSourceDirectory + '**/*.scss'),
-        destination     : path.join(__dirname + "/../public/css")
-    },
-    js: {
-        source          : path.join(__dirname , siteConfig.jsSourceDirectory + '**/**/*.js'),
-        destination     : path.join(__dirname , "/../public/js")
-    },
     //css: {
     //    files: path.join(siteConfig.css.destination, '**/**/*.css'),
     //    minifiedFiles: path.join(siteConfig.css.destination, '**/**/*.min.css'),
@@ -41,6 +33,5 @@ var config = {
 };
 
 require('./gulp-tasks/js')(gulp, plugins, config);
-require('./gulp-tasks/sass')(gulp, plugins, config);
-require('./gulp-tasks/watch')(gulp, plugins, config);
+require('./gulp-tasks/webpack')(gulp, plugins, config);
 require('./gulp-tasks/default')(gulp, plugins, config);
