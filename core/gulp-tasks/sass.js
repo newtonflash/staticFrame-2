@@ -9,7 +9,7 @@ module.exports = function (gulp, plugins, config) {
                 errLogToConsole: true,
                 outputStyle: 'expanded'
             }))
-            .pipe(plugins.sourcemaps.write())
+            .pipe(plugins.sourcemaps.write('/'))
             .pipe(gulp.dest(config.sass.destination));
     });
 
@@ -22,7 +22,7 @@ module.exports = function (gulp, plugins, config) {
                 errLogToConsole: false,
                 outputStyle: 'compressed'
             }))
-            .pipe(plugins.sourcemaps.write())
+            .pipe(plugins.sourcemaps.write('/'))
             .pipe(gulp.dest(config.sass.destination));
     });
 };

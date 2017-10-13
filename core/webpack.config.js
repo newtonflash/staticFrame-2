@@ -16,8 +16,8 @@ if(vendorList[0]){
 }
 
 entryObj[siteConfig.nameSpace + "." + 'scripts']          =  path.resolve(__dirname, siteConfig.jsSourceDirectory + 'index.js');
-entryObj[siteConfig.nameSpace + "." + 'global-framework'] =  path.resolve(__dirname, siteConfig.sassSourceDirectory + 'global-framework.scss');
-entryObj[siteConfig.nameSpace + "." + 'components']       =  path.resolve(__dirname, siteConfig.sassSourceDirectory + 'components.scss');
+entryObj['global-framework'] =  path.resolve(__dirname, siteConfig.sassSourceDirectory + 'global-framework.scss');
+entryObj['components']       =  path.resolve(__dirname, siteConfig.sassSourceDirectory + 'components.scss');
 
 module.exports = {
     entry: entryObj,

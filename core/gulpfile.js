@@ -6,11 +6,11 @@ var siteConfig = require('./site-config.js');
 var config = {
     sass: {
         source          : path.join(__dirname , siteConfig.sassSourceDirectory + '**/*.scss'),
-        destination     : path.join(__dirname + "../public/css")
+        destination     : path.join(__dirname + "/../public/css")
     },
     js: {
         source          : path.join(__dirname , siteConfig.jsSourceDirectory + '**/**/*.js'),
-        destination     : path.join(__dirname , "../public/js")
+        destination     : path.join(__dirname , "/../public/js")
     },
     //css: {
     //    files: path.join(siteConfig.css.destination, '**/**/*.css'),

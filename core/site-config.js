@@ -1,6 +1,7 @@
 const JS_SOURCE_DIRECTORY = "../src/javascript/";
 const SASS_SOURCE_DIRECTORY = "../src/scss/";
 const JS_VENDOR_LIST = ['vendor/vendor-script.js'];
+const CSS_ENTRY_LIST = ['global-framework', "components"];
 
 
 var config = {
@@ -10,6 +11,7 @@ var config = {
     "sassSourceDirectory"   : SASS_SOURCE_DIRECTORY,
     "jsSourceDirectory"     : JS_SOURCE_DIRECTORY,
     "vendorJSList"          : JS_VENDOR_LIST,
+    "cssEntryList"          : CSS_ENTRY_LIST,
     "environment"           : "dev",
     "portNo"                : "3200",
     "templateEngine"        : "handlebars",
