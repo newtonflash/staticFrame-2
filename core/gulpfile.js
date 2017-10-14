@@ -4,6 +4,7 @@ var plugins = require('gulp-load-plugins')();
 var siteConfig = require('./site-config.js');
 
 var config = {
+    siteConfig : siteConfig,
     //css: {
     //    files: path.join(siteConfig.css.destination, '**/**/*.css'),
     //    minifiedFiles: path.join(siteConfig.css.destination, '**/**/*.min.css'),

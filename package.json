@@ -13,7 +13,7 @@
     },
     "scripts" :{
         "start" : "node ./core/server.js",
-        "dev" : "gulp"
+        "dev"   : "webpack --config ./core/webpack.config.js"
     },
     "devDependencies": {
         "gulp"              : "^3.9.1",
