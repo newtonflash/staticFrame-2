@@ -8,6 +8,9 @@ var siteConfig 		= require('./site-config.js');
 var serveIndex      = require('serve-index');
 var exphbs          = require('express-handlebars');
 var favicon         = require('serve-favicon');
+var https           = require('https');
+
+
 
 const PUBLIC_DIRECTORY = "../public";
 
@@ -39,7 +42,12 @@ app.set('view engine', siteConfig.templateEngine);
 
 require("./routes")(app, siteConfig, express);
 
-var server = app.listen(siteConfig.portNo, function () {
+var options = {
+    key: fs.readFileSync('./core/certificates/privateKey.key'),
+    cert: fs.readFileSync('./core/certificates/certificate.crt')
+};
+
+var server = https.createServer(options, app).listen(siteConfig.portNo, function () {
     var host = server.address().address;
     var port = server.address().port;
     console.log('StaticFrame app listening at http://%s:%s', host, port);
